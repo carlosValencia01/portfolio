@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import logo from "../coffeShop/assets/images/logo.png";
 import item1 from "../coffeShop/assets/images/cart-item-1.png";
@@ -6,36 +6,32 @@ import item2 from "../coffeShop/assets/images/cart-item-2.png";
 import item3 from "../coffeShop/assets/images/cart-item-3.png";
 import item4 from "../coffeShop/assets/images/cart-item-4.png";
 export const HomeScreen = () => {
-  let navbar = document.querySelector(".navbar");
+  useEffect(() => {
+    let navbar = document.querySelector(".navbar");
+    document.querySelector("#menu-btn").onclick = () => {
+      navbar.classList.toggle("active");
+      searchForm.classList.remove("active");
+      cartItem.classList.remove("active");
+    };
+    let searchForm = document.querySelector(".search-form");
+    document.querySelector("#search-btn").onclick = () => {
+      searchForm.classList.toggle("active");
+      navbar.classList.remove("active");
+      cartItem.classList.remove("active");
+    };
+    let cartItem = document.querySelector(".cart-items-container");
+    document.querySelector("#cart-btn").onclick = () => {
+      cartItem.classList.toggle("active");
+      navbar.classList.remove("active");
+      searchForm.classList.remove("active");
+    };
 
-  document.querySelector("#menu-btn").onclick = () => {
-    navbar.classList.toggle("active");
-    searchForm.classList.remove("active");
-    cartItem.classList.remove("active");
-  };
-
-  let searchForm = document.querySelector(".search-form");
-
-  document.querySelector("#search-btn").onclick = () => {
-    searchForm.classList.toggle("active");
-    navbar.classList.remove("active");
-
-    cartItem.classList.remove("active");
-  };
-
-  let cartItem = document.querySelector(".cart-items-container");
-
-  document.querySelector("#cart-btn").onclick = () => {
-    cartItem.classList.toggle("active");
-    navbar.classList.remove("active");
-    searchForm.classList.remove("active");
-  };
-
-  window.onscroll = () => {
-    navbar.classList.remove("active");
-    searchForm.classList.remove("active");
-    cartItem.classList.remove("active");
-  };
+    window.onscroll = () => {
+      navbar.classList.remove("active");
+      searchForm.classList.remove("active");
+      cartItem.classList.remove("active");
+    };
+  }, []);
 
   return (
     <div>
