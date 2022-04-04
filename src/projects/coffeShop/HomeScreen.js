@@ -106,7 +106,19 @@ export const HomeScreen = () => {
       </header>
 
       {/* Home section starts */}
-
+      <section className="home" id="home">
+        <div className="content">
+          <h3>fresh coffe in the morning</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint
+            praesentium quo optio unde ipsum, vitae facere modi voluptatum? Quis
+            ut laudantium aut.
+          </p>
+          <a href="abcd.com" className="btn">
+            get yours now
+          </a>
+        </div>
+      </section>
       {/* Home section ends */}
     </div>
   );

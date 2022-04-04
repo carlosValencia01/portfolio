@@ -43,6 +43,10 @@ body {
   background: var(--bg);
 }
 
+section {
+  padding: 2rem 7%;
+}
+
 .header {
   background: var(--bg);
   display: flex;
@@ -189,40 +193,15 @@ body {
   letter-spacing: 0.2rem;
 }
 
-/* 
-
-
 #menu-btn {
   display: none;
 }
-
-
-
-section {
-  padding: 2rem 7%;
-}
-
-.heading {
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  padding-bottom: 3.5rem;
-  font-size: 4rem;
-}
-
-.heading span {
-  color: var(--main-color);
-  text-transform: uppercase;
-}
-
-
-
 
 .home {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(../images/home-img.jpeg) no-repeat;
+  background: url(../coffeShop/assets/images/home-img.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -239,11 +218,30 @@ section {
 
 .home .content p {
   font-size: 2rem;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 1.8;
   padding: 1rem 0;
   color: #eee;
 }
+
+/* 
+
+
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+.heading span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+
+
+
 
 .about .row {
   display: flex;
