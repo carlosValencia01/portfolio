@@ -224,9 +224,6 @@ section {
   color: #eee;
 }
 
-/* 
-
-
 .heading {
   text-align: center;
   color: #fff;
@@ -234,14 +231,11 @@ section {
   padding-bottom: 3.5rem;
   font-size: 4rem;
 }
+
 .heading span {
   color: var(--main-color);
   text-transform: uppercase;
 }
-
-
-
-
 
 .about .row {
   display: flex;
@@ -249,7 +243,6 @@ section {
   background: var(--black);
   flex-wrap: wrap;
 }
-
 .about .row .image {
   flex: 1 1 45rem;
 }
@@ -257,6 +250,7 @@ section {
 .about .row .image img {
   width: 100%;
 }
+
 .about .row .content {
   flex: 1 1 45rem;
   padding: 2rem;
@@ -392,13 +386,6 @@ section {
   line-height: 1.8;
   color: #ccc;
   padding: 2rem 0;
-}
-
-.review .box-container .box .user {
-  height: 7rem;
-  width: 7rem;
-  border-radius: 50%;
-  object-fit: cover;
 }
 
 .review .box-container .box h3 {
